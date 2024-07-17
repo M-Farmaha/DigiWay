@@ -26,6 +26,18 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+          document.write('<link id="theme-stylesheet" rel="stylesheet" href="./css/dark-theme.css">');
+        } else {
+          document.write('<link id="theme-stylesheet" rel="stylesheet" href="./css/light-theme.css">');
+        }
+      })();
+    </script>
+
   </head>
   <body>
     <header class="container header">
@@ -72,11 +84,11 @@
 
         <li class="contact__item">
           <div class="dropdown">
-            <button type="button" class="dropbtn">
-              <span id="selectedLanguage">PL</span>
+            <button type="button" class="dropdown__btn">
+              <span class="dropdown__title" id="selectedLanguage">PL</span>
               <img src="./icons/icon-down.svg" alt="Dropdown Icon" />
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown__content">
               <a href="#" onclick="selectLanguage('PL')">Polish</a>
               <a href="#" onclick="selectLanguage('UA')">Ukrainian</a>
               <a href="#" onclick="selectLanguage('EN')">English</a>
@@ -86,9 +98,9 @@
 
         <li class="contact__item">
           <div class="toggleWrapper">
-            <input type="checkbox" class="dn" id="dn" />
-            <label htmlFor="dn" class="toggle">
-              <span class="toggle__handler"> </span>
+            <input type="checkbox" class="dn" id="dn"/>
+            <label id="toggle" htmlFor="dn" class="toggle">
+              <span class="toggle__handler"></span>
               <img
                 class="toggle__icon sun"
                 id="sun"

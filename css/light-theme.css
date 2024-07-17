@@ -1,0 +1,23 @@
+:root {
+    --main-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --main-font: "Inter", sans-serif;
+    --secondary-font: "Oranienbaum", serif;
+
+    --bg-color: #F6F5F2;
+    --text-color: #2B3F5B;
+
+    --accent-color: #CC8E1E;
+    --accent-color-transparent: #CC8E1E1A;
+    --accent-color-hover: #FFB13B;
+
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+
+    --label-color: #646E7C;
+    --placeholder-color: #B6BBC3;
+    --disabled-color: #D3CFC3;
+
+    --list-heading-bg-color: #FAF4E8;
+    --list-item-bg-color: #F1EFE9;
+}

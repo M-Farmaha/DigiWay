@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.querySelector(".dropdown");
-  const dropbtn = document.querySelector(".dropbtn");
+  const dropbtn = document.querySelector(".dropdown__btn");
   const selectedLanguage = document.getElementById("selectedLanguage");
 
   dropbtn.addEventListener("click", (event) => {
