@@ -1,0 +1,51 @@
+
+
+.motto {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+
+    @media screen and (min-width: 768px) {
+        width: 735px;
+    }
+}
+
+.motto__text {
+    color: var(--accent-color);
+    font-size: 42px;
+    font-family: var(--secondary-font);
+    line-height: 0.9;
+
+
+    &:nth-child(1) {
+        text-align: left;
+        padding-left: 50px;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 30px;
+        }
+    }
+
+    &:nth-child(2) {
+        text-align: center;
+        color: var(--black-color);
+    }
+
+    &:nth-child(3) {
+        text-align: left;
+        padding-left: 170px;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 237px;
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 82px;
+    }
+}
+

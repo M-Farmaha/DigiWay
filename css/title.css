@@ -1,0 +1,11 @@
+.title {
+    font-family: var(--secondary-font);
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-color);
+
+    @media screen and (min-width: 1280px) {
+        font-size: 40px;
+    }
+}

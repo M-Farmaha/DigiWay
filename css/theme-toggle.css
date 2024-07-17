@@ -1,0 +1,66 @@
+.toggleWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dn {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 52px;
+    height: 28px;
+
+    border-radius: 28px;
+    transition: background-color var(--main-transition);
+
+    &:hover .toggle__handler {
+        background-color: var(--accent-color-hover);
+    }
+}
+
+.toggle__handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-color);
+    border-radius: 24px;
+
+    transition: var(--main-transition);
+}
+
+.toggle__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &.sun {
+        left: 7px;
+        filter: brightness(2);
+    }
+
+    &.moon {
+        right: 7px;
+    }
+}
+
+input:checked {
+    +.toggle {
+        .toggle__handler {
+            transform: translateX(24px);
+        }
+
+    }
+}

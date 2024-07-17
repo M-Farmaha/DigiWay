@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiWay</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <a class="logo" href="./index.html">
+        <img src="./icons/logo.svg" alt="DigiWay" />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="./index.html"
+              >Nasi lekarze</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./portfolio.html">Kontakt</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-wrap">
+                <span>Programs</span>
+                <img src="./icons/icon-down.svg" alt="Dropdown Icon" />
+              </div>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-wrap">
+                <span>O nas</span>
+                <img src="./icons/icon-down.svg" alt="Dropdown Icon" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="contact">
+        <li class="contact__item">
+          <div class="contact__user">
+            <img src="./icons/user.svg" alt="DigiWay" />
+          </div>
+        </li>
+
+        <li class="contact__item">
+          <button type="button" class="btn">Skontaktuj się z nami</button>
+        </li>
+
+        <li class="contact__item">
+          <div class="dropdown">
+            <button type="button" class="dropbtn">
+              <span id="selectedLanguage">PL</span>
+              <img src="./icons/icon-down.svg" alt="Dropdown Icon" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#" onclick="selectLanguage('PL')">Polish</a>
+              <a href="#" onclick="selectLanguage('UA')">Ukrainian</a>
+              <a href="#" onclick="selectLanguage('EN')">English</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="contact__item">
+          <div class="toggleWrapper">
+            <input type="checkbox" class="dn" id="dn" />
+            <label htmlFor="dn" class="toggle">
+              <span class="toggle__handler"> </span>
+              <img
+                class="toggle__icon sun"
+                id="sun"
+                src="./icons/sun.svg"
+                alt="sun"
+              />
+              <img
+                class="toggle__icon moon"
+                id="moon"
+                src="./icons/moon.svg"
+                alt="moon"
+              />
+            </label>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="hero__wrap">
+            <div class="hero__text">
+              <h2 class="title">Aкції та Акційні пакети</h2>
+              <p>
+                Ми завжди прагнемо підвищити рівень сервісу надаваних медичних
+                послуг, і вдячні вам за залишений позитивний відгук. Ми беремо
+                до уваги всі коментарі та побажання, які відносяться до нашої
+                роботи. Дякуємо за ваш вибір.
+              </p>
+            </div>
+
+            <div class="hero__images">
+              <img
+                class="hero__img"
+                src="./images/image 19.png"
+                alt="consultation"
+              />
+
+              <div class="hero__blur">
+                <img
+                  class="hero__icon"
+                  src="./icons/сaduceus.svg"
+                  alt="сaduceus"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Пакети</h2>
+          <div class="package">
+            <div class="package__block">
+              <h3 class="package__title">УЗД всього організму для жінок</h3>
+              <p class="package__text">
+                УЗД всього організму для жінок<br />
+                Щитовидна залоза<br />
+                Молочні залози<br />
+                Органи черевної порожнини (печінка, жовчний міхур, підшлункова
+                залоза, селезінка)<br />
+                Нирки та надниркові залози<br />
+                Органи малого тазу<br />
+                Ціна — <span>2600</span> грн.<br />
+                Ціна по акції — 1280 грн
+              </p>
+              <button type="button" class="btn btn--pacakge">
+                Переглянути детальніше
+              </button>
+            </div>
+
+            <div class="package__block">
+              <h3 class="package__title">УЗД всього організму для жінок</h3>
+              <p class="package__text">
+                УЗД всього організму для жінок<br />
+                Щитовидна залоза<br />
+                Молочні залози<br />
+                Органи черевної порожнини (печінка, жовчний міхур, підшлункова
+                залоза, селезінка)<br />
+                Нирки та надниркові залози<br />
+                Органи малого тазу<br />
+                Ціна — <span>2600</span> грн.<br />
+                Ціна по акції — 1280 грн
+              </p>
+              <button type="button" class="btn btn--pacakge">
+                Переглянути детальніше
+              </button>
+            </div>
+
+            <div class="package__block">
+              <h3 class="package__title">УЗД всього організму для жінок</h3>
+              <p class="package__text">
+                УЗД всього організму для жінок<br />
+                Щитовидна залоза<br />
+                Молочні залози<br />
+                Органи черевної порожнини (печінка, жовчний міхур, підшлункова
+                залоза, селезінка)<br />
+                Нирки та надниркові залози<br />
+                Органи малого тазу<br />
+                Ціна — <span>2600</span> грн.<br />
+                Ціна по акції — 1280 грн
+              </p>
+              <button type="button" class="btn btn--pacakge">
+                Переглянути детальніше
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Акційні пропозиції</h2>
+          <div class="discounts__wrap">
+            <div class="discounts__swiper">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <img src="./images/x-ray.png" alt="x-ray" />
+                      <h3 class="slide__title">
+                        Акція "-40% на пробне заняття з кінезітерапії"
+                      </h3>
+                      <p class="slide__text">
+                        Маєте чудову нагоду потурбуватись про власне здоров’я за
+                        вигідною пропозицією вартістю 680 408 грн.
+                      </p>
+                      <span>
+                        <a class="slide__link" href="#" onclick="return false;">
+                          Переглянути детальніше
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <img src="./images/x-ray-2.png" alt="x-ray" />
+                      <h3 class="slide__title">
+                        Акція "-40% на пробне заняття з кінезітерапії"
+                      </h3>
+                      <p class="slide__text">
+                        Маєте чудову нагоду потурбуватись про власне здоров’я за
+                        вигідною пропозицією вартістю 680 408 грн.
+                      </p>
+                      <span>
+                        <a class="slide__link" href="#" onclick="return false;">
+                          Переглянути детальніше
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide">
+                      <img src="./images/x-ray-3.png" alt="x-ray" />
+                      <h3 class="slide__title">
+                        Акція "-40% на пробне заняття з кінезітерапії"
+                      </h3>
+                      <p class="slide__text">
+                        Маєте чудову нагоду потурбуватись про власне здоров’я за
+                        вигідною пропозицією вартістю 680 408 грн.
+                      </p>
+                      <span>
+                        <a class="slide__link" href="#" onclick="return false;">
+                          Переглянути детальніше
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-btn-prev">
+                  <img src="./icons/prev.svg" alt="Previous" />
+                </div>
+                <div class="swiper-btn-next">
+                  <img src="./icons/next.svg" alt="Next" />
+                </div>
+              </div>
+            </div>
+            <form class="discounts__form">
+              <strong class="discounts__title">Czekamy na Ciebie!</strong>
+              <div class="discounts__inputs">
+                <div class="discounts__input-wrapper">
+                  <label class="discounts__label" for="name"
+                    >Imię i nazwisko</label
+                  >
+                  <input
+                    class="discounts__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="Agnieszka Kowalczyk"
+                    required
+                    autofocus
+                  />
+                </div>
+
+                <div class="discounts__input-wrapper">
+                  <label class="discounts__label" for="tel">Phone</label>
+                  <input
+                    class="discounts__input"
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    autocomplete="tel"
+                    placeholder="+48 XXX XXX XXX"
+                    required
+                    autofocus
+                  />
+                </div>
+
+                <div class="discounts__input-wrapper">
+                  <label class="discounts__label" for="email">E-mail</label>
+                  <input
+                    class="discounts__input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="name@gmail.com"
+                    required
+                    autofocus
+                  />
+                </div>
+              </div>
+
+              <div class="discounts__checkbox-wrapper">
+                <input
+                  class="discounts__checkbox"
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                />
+                <label class="discounts__checkbox-label" for="terms"
+                  >Wypełnienie formularza zgłoszeniowego jest równoznaczne z
+                  wyrażeniem zgody na przetwarzanie danych osobowych,
+                  otrzymywanie newslettera, oraz kontakt telefoniczny</label
+                >
+              </div>
+
+              <button class="btn discounts__button" type="submit">
+                Wyślij
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title">Прайс лист</h2>
+          <div class="price">
+            <div class="price__wrap">
+              <ul class="price__list">
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Konsultacje</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Badania</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Konsultacje</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="price__item"></li>
+
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Konsultacje</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Badania</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Konsultacje</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="price__item">
+                  <ul class="price__nested-list">
+                    <li class="price__nested-item--heading">
+                      <p class="price__text--heading">Kod</p>
+                      <p class="price__text--heading">Badania</p>
+                      <p class="price__text--heading">Cena brutto</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">
+                        Telekonsultacja anestezjologiczna
+                      </p>
+                      <p class="price__text">190 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                    <li class="price__nested-item">
+                      <p class="price__text">89.000</p>
+                      <p class="price__text">Konsultacja anestezjologiczna</p>
+                      <p class="price__text">280 zł</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__motto">
+        <div class="container">
+          <div class="motto">
+            <p class="motto__text">Twój</p>
+            <p class="motto__text">kompleksowy przegląd</p>
+            <p class="motto__text">stanu zdrowia</p>
+
+            <a class="logo__motto" href="./index.html">
+              <img src="./icons/logo.svg" alt="DigiWay" width="112" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__contacst">
+        <div class="container">
+          <div class="contacts__wrap">
+            <div class="contacts">
+              <div class="contacts__tel">
+                <p>W razie jakichkolwiek pytań, zadzwoń</p>
+                <p>
+                  <a class="contacts__phone-link" href="tel:+48000000000"
+                    >+48 00 000 00 00</a
+                  >
+                </p>
+                <p>Pon. - Pt.: 07:00-20:00</p>
+              </div>
+
+              <div class="contacts__address">
+                <p class="contacts__address-text">Nasz adres</p>
+
+                <div class="contacts__address-link">
+                  <p
+                    class="contacts__address-text contacts__address-text--location"
+                  >
+                    Lorem, <br />
+                    01-005 Warszawa
+                  </p>
+
+                  <a
+                    href="https://maps.google.com/?q=Lorem, 01-005 Warszawa"
+                    target="_blank"
+                  >
+                    <div class="contacts__address-icon-wrap">
+                      <img src="./icons/telegram.svg" alt="open map" /></div
+                  ></a>
+                </div>
+              </div>
+
+              <div class="contacts__email">
+                <div class="contacts__email--email">
+                  <p>Nasz adres e-mail</p>
+                  <p>
+                    <a
+                      class="contacts__email-link"
+                      href="mailto:info@lorem.center"
+                      >info@lorem.center</a
+                    >
+                  </p>
+                </div>
+
+                <div class="contacts__social">
+                  <ul class="contacts__social-list">
+                    <li class="contacts__social-item">
+                      <a
+                        class="link--instagram"
+                        href="#"
+                        onclick="return false;"
+                      >
+                        <img src="./icons/instagram.svg" alt="instagram" />
+                      </a>
+                    </li>
+
+                    <li class="contacts__social-item">
+                      <a class="link--fb" href="#" onclick="return false;">
+                        <img src="./icons/fb.svg" alt="facebook" />
+                      </a>
+                    </li>
+
+                    <li class="contacts__social-item">
+                      <a
+                        class="link--linkedin"
+                        href="#"
+                        onclick="return false;"
+                      >
+                        <img src="./icons/linkedin.svg" alt="linkedin" />
+                      </a>
+                    </li>
+
+                    <li class="contacts__social-item">
+                      <a class="link--youtube" href="#" onclick="return false;">
+                        <img src="./icons/youtube.svg" alt="youtube" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="background"></div>
+            <div class="background-image"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer__section">
+      <div class="footer"><p>&copy; 2024 Single Page Application</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/dropdown-language.js"></script>
+  </body>
+</html>
