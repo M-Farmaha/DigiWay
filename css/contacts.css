@@ -51,7 +51,7 @@
     width: 368px;
     height: 368px;
 
-    background-image: url('/images/map.svg');
+    background-image: url('../images/map.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
