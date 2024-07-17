@@ -1,11 +1,132 @@
-
-
 .footer {
-    height: 250px;
+    margin-bottom: 50px;
 
-    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        height: 150px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 0px;
+    }
+}
+
+.footer__motto,
+.footer__policy,
+.footer__visa,
+.footer__contacts {
+    display: flex;
+    height: 100%;
+    width: 295px;
+}
+
+.footer__visa,
+.footer__contacts {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__contacts {
+
+    min-width: 200px;
+}
+
+.footer__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer__subtitle--motto {
+    margin-top: 0px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 50px;
+    }
+}
+
+.footer__visa-text {
+    font-size: 12px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.footer__nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer__nav-link {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 400;
+
+    transition: var(--main-transition);
+
+    &:hover {
+        color: var(--accent-color-hover);
+    }
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 159px;
+}
+
+.footer__social-item {
+    &:hover img {
+        filter: brightness(1.8);
+    }
+}
+
+.footer__policy-list {
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 186px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+}
+
+.footer__policy-link {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 400;
+
+    transition: var(--main-transition);
+
+    &:hover {
+        color: var(--accent-color-hover);
+    }
 }

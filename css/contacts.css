@@ -22,7 +22,7 @@
     height: 100%
 }
 
-.background {
+.contacts__background {
     display: none;
 
     position: absolute;
@@ -39,7 +39,7 @@
     }
 }
 
-.background-image {
+.contacts__background-image {
 
     display: none;
 
