@@ -1,7 +1,7 @@
 .slide {
     margin-left: auto;
     margin-right: auto;
-   
+
     width: 100%;
     max-width: 629px;
     display: flex;
@@ -25,6 +25,8 @@
     font-family: var(--main-font);
     color: var(--accent-color);
 
+    transition: var(--main-transition);
+
     &:hover {
         color: var(--accent-color-hover);
     }
@@ -46,11 +48,17 @@
     align-items: center;
     z-index: 10;
 
+    transition: var(--main-transition);
+
     &:hover {
         background-color: var(--white-color);
     }
 
-    
+    &:hover img {
+        filter: brightness(1.2);
+    }
+
+
     @media screen and (min-width: 1280px) {
         width: 88px;
         height: 88px;

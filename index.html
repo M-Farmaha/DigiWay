@@ -28,16 +28,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
 
     <script>
-      (function() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-          document.write('<link id="theme-stylesheet" rel="stylesheet" href="./css/dark-theme.css">');
+      (function () {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.write(
+            '<link id="theme-stylesheet" rel="stylesheet" href="./css/dark-theme.css">'
+          );
         } else {
-          document.write('<link id="theme-stylesheet" rel="stylesheet" href="./css/light-theme.css">');
+          document.write(
+            '<link id="theme-stylesheet" rel="stylesheet" href="./css/light-theme.css">'
+          );
         }
       })();
     </script>
-
   </head>
   <body>
     <header class="container header">
@@ -98,7 +101,7 @@
 
         <li class="contact__item">
           <div class="toggleWrapper">
-            <input type="checkbox" class="dn" id="dn"/>
+            <input type="checkbox" class="dn" id="dn" />
             <label id="toggle" htmlFor="dn" class="toggle">
               <span class="toggle__handler"></span>
               <img

@@ -5,14 +5,19 @@
 
 .dropdown__btn {
     background-color: transparent;
-
     padding: 10px 0px;
-
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 8px;
+
+    transition: var(--main-transition);
+
+    &:hover span {
+        color: var(--accent-color-hover);
+    }
+
 }
 
 .dropdown__title {
@@ -33,6 +38,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
+    transition: var(--main-transition);
 
     &:hover {
         background-color: var(--list-item-bg-color);
